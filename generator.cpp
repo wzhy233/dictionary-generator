@@ -78,7 +78,7 @@ private:
                 continue;
             }
 
-            stack.push_back(current + 'I');
+            stack.push_back(current + "I");
             stack.push_back(current + 'l');
         }
     }
@@ -271,7 +271,7 @@ OPTIMIZE_O2 signed main(int argc, char* argv[]) {
             else if (strcmp(argv[i], "-outfile") == 0 && i + 1 < argc) {
                 outfile = argv[++i];
             }
-            else if (strcmp(argv[i], "-o") == 0 && i + 1 < argc) {  // Short form for outfile
+            else if (strcmp(argv[i], "-o") == 0 && i + 1 < argc) {
                 outfile = argv[++i];
             }
             else {
