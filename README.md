@@ -6,17 +6,7 @@
 
 * 多线程高效生成，充分利用 CPU 资源
   
-* 支持自定义生成数量
-  
-* 两种使用模式：命令行模式和交互模式
-  
-* 详细的生成统计信息
-  
-* 支持将结果保存到文件
-  
 * 优化的内存使用和生成算法
-  
-* 支持 GNU C++ 和 MSVC 编译器
   
 
 ## 编译安装
@@ -56,11 +46,11 @@
 
 选项说明：
 
-* `-count <N>`: 要生成的字符串数量（必需）
+* `-count <N>`: 要生成的字符串数量
   
-* `-verbose`: 启用详细输出模式（可选）
+* `-verbose`: 启用详细输出模式
   
-* `-outfile <file>`: 输出文件名（默认：dictionary.txt）
+* `-outfile <file>`: 输出文件名
   
 * `-help`: 显示帮助信息
   
@@ -79,10 +69,7 @@
 
 ### 交互模式
 
-直接运行程序不带任何参数即可进入交互模式：
-
-    
-    generator
+直接运行程序不带任何参数即可进入交互模式
 
 交互模式会引导您完成以下步骤：
 
@@ -90,7 +77,7 @@
   
 2. 选择是否启用详细输出
   
-3. 输入输出文件名（或使用默认值）
+3. 输入输出文件
   
 
 ## 示例输出
@@ -155,31 +142,5 @@
      Everyone is permitted to copy and distribute verbatim copies
      of this license document, but changing it is not allowed.
 
-## 作者信息
 
-* 作者：wzhy233
-  
-* 邮箱：[support@91net.top](mailto:support@91net.top)
-  
-* 项目地址：[https://github.com/wzhy233/dictionary-generator/](https://github.com/wzhy233/dictionary-generator/)
-  
-
-## 性能说明
-
-* 生成速度：约 80-120 个字符串 / 毫秒（取决于 CPU 性能）
-  
-* 内存使用：生成 100 万个字符串约占用 100MB 内存
-  
-* 线程数：自动根据 CPU 核心数调整，最多使用 8 个线程
-  
-
-## 注意事项
-
-* 生成的字符串仅包含字符 'I'（大写 i）和 'l'（小写 L）
-  
-* 生成数量必须大于 0
-  
-* 生成的字符串长度会自动调整以确保唯一性
-  
-* 在高并发环境下，建议适当减少线程数以避免资源竞争
   
